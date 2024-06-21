@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Calculator</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-screen" id="calculator-screen">0</div>
+        <div class="calculator-keys">
+            <button class="key operator" onclick="clearAll()">AC</button>
+            <button class="key operator" onclick="deleteNumber()">DEL</button>
+            <button class="key operator" onclick="setOperation('/')">/</button>
+            <button class="key operator" onclick="setOperation('*')">*</button>
+
+            <button class="key" onclick="appendNumber('7')">7</button>
+            <button class="key" onclick="appendNumber('8')">8</button>
+            <button class="key" onclick="appendNumber('9')">9</button>
+            <button class="key operator" onclick="setOperation('-')">-</button>
+
+            <button class="key" onclick="appendNumber('6')">6</button>
+            <button class="key" onclick="appendNumber('5')">5</button>
+            <button class="key" onclick="appendNumber('4')">4</button>
+            <button class="key operator" onclick="setOperation('+')">+</button>
+
+            <button class="key" onclick="appendNumber('1')">1</button>
+            <button class="key" onclick="appendNumber('2')">2</button>
+            <button class="key" onclick="appendNumber('3')">3</button>
+
+            <button class="key" onclick="appendNumber('0')" style="grid-column: span 2">0</button>
+            <button class="key" onclick="appendNumber('.')">.</button>
+            <button class="key equal-sign" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
